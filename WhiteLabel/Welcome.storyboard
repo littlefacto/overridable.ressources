@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sYy-Lx-Xur">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="Top-EM-7HR">
+            <objects>
+                <viewController id="sYy-Lx-Xur" customClass="WelcomeViewController" customModule="WhiteLabel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3D3-Ib-9t1"/>
+                        <viewControllerLayoutGuide type="bottom" id="XMC-GP-iU1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aoo-VL-ZzU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tti-Yp-PUa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pUO-3T-oqh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="343.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1B-MF-BEa">
+                                        <rect key="frame" x="0.0" y="343.5" width="375" height="343.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tti-Yp-PUa" firstAttribute="leading" secondItem="aoo-VL-ZzU" secondAttribute="leading" id="473-YB-WWJ"/>
+                            <constraint firstItem="XMC-GP-iU1" firstAttribute="top" secondItem="Tti-Yp-PUa" secondAttribute="bottom" constant="-20" id="Avi-Ju-lFc"/>
+                            <constraint firstAttribute="trailing" secondItem="Tti-Yp-PUa" secondAttribute="trailing" id="OPA-1O-3ub"/>
+                            <constraint firstItem="Tti-Yp-PUa" firstAttribute="top" secondItem="3D3-Ib-9t1" secondAttribute="bottom" constant="-20" id="goL-K3-DcL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="pUO-3T-oqh" id="f0H-3A-ATn"/>
+                        <outlet property="label" destination="t1B-MF-BEa" id="PBN-6z-Xyj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hs1-if-e7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="4"/>
+        </scene>
+    </scenes>
+</document>
